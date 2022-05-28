@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formaulaire interactif</title>
+	<script src="formulaire1.js"></script>
+	<style>
+		body{
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend><strong>inscription</strong></legend>
+			<label for="sexe">Sexe : </label>
+			Masculin  <input type="radio" name="sexe" id="sexe" onfocus="onFocusSexe()" onblur="onBlurSexe()">
+						<span id="msgsexe"></span>
+
+			Féminin <input type="radio" name="sexe" id="sexe" onfocus="onFocusSexe()"
+						onblur="onBlurSexe()>
+			<span id="msgSexe"></span>
+			<br><br>
+
+			<label for="nom">Nom: </label>
+			<input type="text" id="nom" placeholder="veuillez saisir votre prenom" onfocus="onFocusNom()" onblur="onBlurNom()">
+			<span id="msgNom"></span>
+			<br><br>
+			<label for="prenom">Prénom : </label>
+			<input type="text" id="prenom" placeholder="veuillez saisir votre prenom" onfocus="onFocusPrenom()" onblur="onBlurPrenom()">
+			<span id="msgPrenom"></span>
+			<br><br>
+
+			<label for="age">Age : </label>
+			<input type="text" id="age" placeholder="veuillez saisir votre prenom" onfocus="onFocusAge()" onblur="onBlurAge()">
+			<span id="msgAge"></span>
+			<br><br>
+
+			<label for="Pseudo">Pseudo : </label>
+			<input type="text" id="pseudo" placeholder="veuillez saisir votre pseudo" onfocus="onFocusPseudo()" onblur="onBlurPseudo()">
+			<span id="msgPseudo"></span>
+			<br><br>
+
+			<label for="Password">Mot de passe : </label>
+			<input type="text" id="password" placeholder="veuillez saisir votre mot de passe" onfocus="onFocusPassword()" onblur="onBlurPassword()">
+			<span id="msgPassword"></span>
+			<br><br>
+
+				<label for="Password1">Mot de Passe (confirmation) :</label>
+				<input type="text" id="password1" placeholder="veuillez Confirmer votre mot de passe(confirmation) :" onfocus="onFocusPassword1()"
+					onblur="onBlurPassword1()">
+				<span id="msgPassword1"></span>
+				<br><br>
+
+				<label for="pays">Séléctionner votre pays : </label>
+				<select id="pays" onfocus="onfocuspays()" onchange="onchangepays()">
+					<option value="aucun">choisir votre pays</option>
+					<option value="senegal">senegal</option>
+					<option value="Comore">Comores</option>
+					<option>Guine</option>
+					<option>Mali</option>
+					<option>Centrafrique</option>
+					<option>Moritanie</option>
+					<option>Congo</option>
+				</select>
+				<span id="msgPays"></span><br>
+
+				<label for="mail">Recevoir des mails </label>
+				<input type="checkbox" name="mail" onfocus="onFocusmail()" onblur="onBlurmail()">
+				<span id="msgmail"></span><br>
+
+			<input type="submit" value="Envoyer">
+		</fieldset>
+	</form>
+</body>
+</html>
